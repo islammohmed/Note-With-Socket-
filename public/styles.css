@@ -1,0 +1,77 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#app {
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#notesList {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+strong {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  color: #555;
+}
+
+button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
